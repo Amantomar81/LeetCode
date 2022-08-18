@@ -5,10 +5,10 @@ class Solution {
         char temp;
         while(start < end){
             temp = s[end];
-            s[end] = s[start];
-            s[start] = temp;
-            start++;
-            end--;
+            s[end--] = s[start];
+            s[start++] = temp;
+            //start++;
+            //end--;
         }
     }
 }
