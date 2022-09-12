@@ -4,9 +4,9 @@ class Solution {
         int profit = 0;
         //start with index 1and compare the price
         //with previous day price & calculate profit if any
-        for(int i=1;i<n;i++){
-            if(prices[i]>prices[i-1]){
-                profit += (prices[i] - prices[i-1]);
+        for(int i=0;i<n-1;i++){
+            if(prices[i+1]>prices[i]){
+                profit += (prices[i+1] - prices[i]);
             }
         }
         return profit;
