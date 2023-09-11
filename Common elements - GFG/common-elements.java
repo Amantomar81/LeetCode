@@ -77,6 +77,6 @@ class Solution
                res.add(num);
            }
        }
-       return new ArrayList<>(res);
+       return res;
     }
 }
